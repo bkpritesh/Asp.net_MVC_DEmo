@@ -1,0 +1,248 @@
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\ApplicationInsights.config
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\csc.exe
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\System.Collections.Immutable.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\vbc.exe
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe.config
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll.config
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\ShoppingCart.pdb
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Antlr3.Runtime.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\EntityFramework.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\EntityFramework.SqlServer.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.ApplicationInsights.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Google.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Web.Infrastructure.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Newtonsoft.Json.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Owin.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Helpers.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Mvc.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Optimization.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Razor.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Deployment.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Razor.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\WebGrease.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.ApplicationInsights.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Helpers.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Mvc.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Optimization.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.Razor.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Deployment.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Razor.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Antlr3.Runtime.pdb
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Newtonsoft.Json.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\EntityFramework.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\EntityFramework.SqlServer.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Google.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
+c:\users\ns21\documents\visual studio 2015\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\ApplicationInsights.config
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\csc.exe
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\System.Collections.Immutable.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\System.Reflection.Metadata.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\vbc.exe
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe.config
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll.config
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\ShoppingCart.pdb
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Antlr3.Runtime.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\EntityFramework.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\EntityFramework.SqlServer.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.ApplicationInsights.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Google.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Web.Infrastructure.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Newtonsoft.Json.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Owin.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Helpers.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Mvc.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Optimization.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Razor.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Deployment.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Razor.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\WebGrease.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.ApplicationInsights.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Helpers.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Mvc.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Optimization.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.Razor.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Deployment.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Razor.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Antlr3.Runtime.pdb
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Newtonsoft.Json.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\EntityFramework.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\EntityFramework.SqlServer.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Google.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Other_Project\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
+F:\Other_Project\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
+F:\Other_Project\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\ApplicationInsights.config
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\csc.exe
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\System.Collections.Immutable.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\System.Reflection.Metadata.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\vbc.exe
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\roslyn\VBCSCompiler.exe.config
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll.config
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\ShoppingCart.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\ShoppingCart.pdb
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Antlr3.Runtime.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\EntityFramework.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\EntityFramework.SqlServer.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.ApplicationInsights.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Google.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Web.Infrastructure.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Newtonsoft.Json.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Owin.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Helpers.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Mvc.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Optimization.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Razor.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Deployment.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Razor.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\WebGrease.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.DependencyCollector.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.Web.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AI.WindowsServer.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.ApplicationInsights.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Helpers.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Mvc.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Optimization.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.Razor.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Deployment.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\System.Web.WebPages.Razor.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Antlr3.Runtime.pdb
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Newtonsoft.Json.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\EntityFramework.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\EntityFramework.SqlServer.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Google.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojAssemblyReference.cache
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CoreCompileInputs.cache
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.CopyComplete
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.dll
+E:\Pritesh\Project_Demo\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb

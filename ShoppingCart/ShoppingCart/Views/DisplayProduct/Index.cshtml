@@ -1,0 +1,70 @@
+﻿@using ShoppingCart.Models;
+@model ProductModel
+@{
+    ViewBag.Title = "Index";
+}
+@using ShoppingCart.EF
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<link href="~/Style/style.css" rel="stylesheet" />
+<script src="~/Scripts/MyScript.js"></script>
+<h2>Index</h2>
+<script>
+
+    $(document).ready(function () {        
+        setTimeout(function () {
+            $(document).on("click", ".insertcart", function () {              
+                var qty = $(this).parent().siblings().find('.form-group #Quntity').val()
+                var pid = $(this).parents('.item').find('#ProductID').val()
+                $.ajax({
+                    async: false,
+                    url: "/DisplayProduct/AddToBasket",
+                    type: "POST",
+                    data: {
+                        ProductId: pid,
+                        Quntity: qty
+                    }
+                });
+                window.location.href = '/Cart/Index';
+            });
+        }, 1000);
+    });
+   
+</script>
+<div id="products" class="row list-group">
+
+    @foreach (ProductModel p in ViewBag.listproduct)
+    {
+
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="@p.ImgPath" alt="" style="width:150px;height:150px" />
+            </div>
+            <input type="hidden" id="ProductID" value="@p.ProductID" />
+            <div class="caption">
+                <h4 class="group inner list-group-item-heading">
+                    @p.ProductName
+                </h4>
+                <p class="group inner list-group-item-text">
+                    Product description...Sample.....
+                </p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="lead">
+                            RS.  @p.Price
+                        </p>
+                        <div class="form-group">
+                            <label class="form-group">Quntity</label>
+                            <div class="col-md-10">
+                                <input id="Quntity" name="Quntity" value="1" placeholder="Enter quantity" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <input type="submit" value="Save" class="btn btn-success insertcart" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

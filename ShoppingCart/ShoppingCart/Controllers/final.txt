@@ -1,0 +1,709 @@
+<div ng-show="tab=='customer-portfolio'" id="propertydetails">
+                                        <div class="properydetails_tab">
+                                            <!-- class="panel-body" style="padding-right:0px; -->
+                                            <div class="panel-body" style="padding-right:0px;">
+                                                <!--New Quick Quote-->
+                                                <!--<div class="row">
+                                                    <div class="">
+                                                        <div class="portlet light tab_head">
+                                                            <div class="portlet-body">
+                                                                <div class="mt-element-step">
+                                                                    <div class="row step-thin">
+                                                                        <a class="col-md-4 bg-grey mt-step-col active" data-ui-sref="root.qui({cid: {{CUSTOMERID}}})">
+                                                                            <div class="mt-step-number bg-white font-grey"><i class="fa fa-home" aria-hidden="true"></i></div>
+                                                                            <div class="mt-step-title uppercase font-grey-cascade">Add Property</div>
+                                                                            <div class="mt-step-content font-grey-cascade">Property Details</div>
+                                                                        </a>
+
+                                                                        <a class="col-md-4 bg-grey mt-step-col" href="#!/Portfolioportal" style="opacity:0.5;pointer-events:none;">
+                                                                            <div class="mt-step-number bg-white font-grey"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                                                                            <div class="mt-step-title uppercase font-grey-cascade">Portfolio Summary</div>
+                                                                            <div class="mt-step-content font-grey-cascade">Portfolio List & Coverage</div>
+                                                                        </a>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+
+                                                <div class="row">
+                                                    <div class="tab-content main-content col-xs-12 col-sm-12 PropertyDetails">
+                                                        <div class="tab-pane active margl0" id="PropertyDetails">
+                                                            <div class="tab-container">
+                                                                <div class="col-xs-12 col-sm-4 col-md-3 side-panel-container Property_Details">
+                                                                    <form name="propertyForm" id="propertyForm" ng-submit="submitProperty()">
+                                                                        <div class="side-panel">
+                                                                            <div id="property_detail">
+                                                                                <div class="row">
+                                                                                    <div class="col-xs-12 text-center side-panel-Head">
+                                                                                        <h1>Property Details</h1>
+                                                                                        <hr class="headding_line" width="25%" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-12 col-md-12   form-line">
+                                                                                        <input class="form-control investor-form" type="text" ng-model="property.address" placeholder="Address" id="searchAddress" required />
+                                                                                        <br />
+                                                                                        <input class="form-control investor-form" type="text" ng-model="property.city" placeholder="City" />
+                                                                                        <br />
+                                                                                        <div class="row">
+                                                                                            <div class="col-sm-6 form-group">
+                                                                                                <input class="form-control investor-form col-sm-6" type="text" ng-model="property.state" placeholder="State" />
+                                                                                            </div>
+                                                                                            <div class="col-sm-6 form-group">
+                                                                                                <input class="form-control investor-form col-sm-6" type="text" id="zip_code" ng-model="property.zipcode" placeholder="Zip Code" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!--<input class="form-control investor-form" type="text" ng-model="property.country" placeholder="Country" />-->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row form-line">
+                                                                                    <div class="col-sm-6  ">
+                                                                                        <p class="form-label">SQFT</p>
+                                                                                        <input class="form-control investor-form" type="text" id="square_footage" placeholder="Square Footage" ng-model="property.footage" ng-blur="resetSlider();" required>
+                                                                                    </div>
+                                                                                    <div class="col-sm-6  ">
+                                                                                        <p class="form-label">Year Built</p>
+                                                                                        <input class="form-control investor-form" type="text" id="year_built" placeholder="Year Built" ng-model="property.year_built" ng-blur="ratingInsureInvestors('',$event);" required>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12 col-md-12  ">
+                                                                                        <p class="form-label">OCCUPANCY OPTIONS</p>
+                                                                                        <select ng-model="property.occupancy" class="form-control" data-size="4"
+                                                                                                ng-options="x as x.name for x in occupancy_Type track by x.id"
+                                                                                                ng-required="true">
+                                                                                            <option value="" disabled>Select Occupancy Option</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12 col-md-12">
+                                                                                        <p class="form-label">PROPERTY TYPE</p>
+                                                                                        <select ng-model="property.property_Type" class="form-control form-group" data-size="4"
+                                                                                                ng-options="x as x.name for x in propertyType track by x.id"
+                                                                                                ng-required="true">
+                                                                                            <option value="" disabled>Select A Property Type</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-12  col-md-12  ">
+                                                                                        <p class="form-label">Property Coverage</p>
+                                                                                        <div class="input-group">
+                                                                                            <input type="text" class="form-control investor-form" name="security" id="security" ng-model="property.coverage_value" ng-blur="changeCoverageValue()" required>
+                                                                                            <span class="input-group-addon">
+                                                                                                <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Tooltip here">
+                                                                                                    <img src="../../../../../Images/Agents/quote/help_icon.png" />
+                                                                                                </a>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <p class="form-label">Choose Your Property Coverage</p>
+                                                                                        <div class="row text-center">
+                                                                                            <div class="col-xs-4 col-sm-4 col-md-4 text-left" id="vertical_range_line">
+                                                                                                <p class="range_design">High</p>
+                                                                                            </div>
+                                                                                            <div class="col-xs-4 col-sm-4 col-md-4" id="vertical_range_line">
+                                                                                                <p class="range_design">Moderate</p>
+                                                                                            </div>
+                                                                                            <div class="col-xs-4 col-sm-4 col-md-4 text-right" id="vertical_range_line">
+                                                                                                <p class="range_design">Low</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <hr class="range_line" />
+                                                                                        <div class="range-slider">
+                                                                                            <input class="range-slider__range" type="range" name="range" ng-model="rangeslider_val" min="{{ rangeslider_min }}" max="{{ rangeslider_max }}" value="{{rangeslider_val}}" ng-mouseup="rangeslider()">
+                                                                                        </div>
+                                                                                        <div class="row text-center range_bottom">
+                                                                                            <div class="col-xs-6 col-sm-6 col-md-6 text-left">
+                                                                                                <p class="range_design_bottom">{{ rangeslider_min | currency }}</p>
+                                                                                            </div>
+                                                                                            <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                                                                                                <p class="range_design_bottom">{{ rangeslider_max | currency }}</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-12 col-md-12 col-xs-12 text-right">
+                                                                                        <input type="button" class="btn btn-lg btn-primary btn-property mrgt0 add_pro btn_next" role="button" value="Next">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-8 col-md-9 right-panel sm-right">
+                                                                    <div class="main-panel">
+                                                                        <div class="property-panel">
+                                                                            <div class="col-xs-12 col-sm-12 col-md-6 premium-tab">
+                                                                                <div class="pr0">
+                                                                                    <div class="row text-center">
+                                                                                        <p class="price-label">Yearly Premium Breakdown</p>
+                                                                                        <hr class="bottom-line" width="150px">
+                                                                                    </div>
+                                                                                    <div class="row text-center">
+                                                                                        <div class="col-xs-12 col-sm-4 col-md-4 premium-sub-tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/property.png" />
+                                                                                            <h3>Property</h3>
+                                                                                            <p class="mrg0">{{property.propertyPremium ? property.propertyPremium : 0  | currency}}</p>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12 col-sm-4 col-md-4 premium-sub-tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/padnote.png" />
+                                                                                            <h3>liability</h3>
+                                                                                            <p class="mrg0">{{property.dblLiabilityPremium ? property.dblLiabilityPremium : 0 | currency}}</p>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12 col-sm-4 col-md-4 premium-sub-tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/flooding-house.png" />
+                                                                                            <h3>flood</h3>
+                                                                                            <p class="mrg0">{{property.dblFloodPremium ?  property.dblFloodPremium : 0 | currency}}</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-12 col-sm-6 col-md-3 lowPrice-tab">
+                                                                                <div class="pl0 pr0">
+                                                                                    <div class="row text-center">
+                                                                                        <div class="progress-radial progress-0 setsize {{ progres_class}}">
+                                                                                            <div class="overlay setsize">
+                                                                                                <p>{{risk_tracker ? risk_tracker : 'No Risk'}}</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-12 col-sm-6 col-md-3 monthly-tab">
+                                                                                <div class="row text-center monthly-tab-title">
+                                                                                    <p>Monthly Premium</p>
+                                                                                    <hr class="bottom-line" width="150px">
+                                                                                </div>
+                                                                                <div class="row text-center">
+                                                                                    <p class="price-tab">{{property.FinalPremium ? property.FinalPremium/12 : 0| currency}}</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="right_one">
+                                                                            <div class="coverage_panel">
+                                                                                <div class="coverage_included_section">
+                                                                                    <div class="coverage_section_head">
+                                                                                        <p class="coverage_section_head_title text-uppercase">Included Coverage:</p>
+                                                                                        <p class="coverage_section_head_label">All of these coverages are included in your basic plan.</p>
+                                                                                    </div>
+                                                                                    <div class="coverage_section_two monthly_premium text-center">
+                                                                                        <img src="../../../../../Images/Agents/quote/home-cost.png" class="coverage_included_image" />
+                                                                                        <p class="coverage_price text-uppercase">
+                                                                                            Reconstruction Costs
+                                                                                            <!--<a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Tooltip here">
+                                                    <img src="images/help_icon.png" />
+                                                </a>-->
+                                                                                        </p>
+                                                                                        <p class="sub_description_head">This is the reconstruction value of the dwelling that you are insuring the property for.  The amount should reflect the costs to replace the property in the event of a full loss.  It does not reflect market value or value of the land.</p>
+                                                                                        <div class=" additional_btn">
+                                                                                            <div ng-init="property.coverage_value = 0" class="inc_dec_container">
+                                                                                                <!--<a class="btn btn-lg btn-primary coverage_btn" href="#" role="button">{{property.coverage_value ? property.coverage_value : 0 | currency}}</a>-->
+                                                                                                <button ng-click="DecrementPropertyCoverage()" class="btn_left"><i class="fa fa-minus"></i></button>
+                                                                                                <input type="text" ng-model="property.coverage_value" class="investor-form" ng-change="changeCoverageValue()" />
+                                                                                                <button ng-click="IncrementPropertyCoverage()" class="btn_right"> <i class="fa fa-plus"></i></button>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="coverage_section_one   coverage_included_section">
+                                                                                        <div class="coverage_included  coverage_included_white">
+                                                                                            <div class="coverage_text_container">
+                                                                                                <img src="../../../../../Images/Agents/quote/cloud.png" class="coverage_included_image" />
+                                                                                                <p class="coverage_text text-uppercase">
+                                                                                                    Bad Weather Damage
+                                                                                                    <!--<a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Tooltip here">
+                                                            <img src="images/help_icon.png" />
+                                                        </a>-->
+                                                                                                </p>
+                                                                                                <p class="sub_description">Wind, Lighting, Hail can be catastrophic.  We cover all of them. Flood insurance is not a part of the basic coverage.  </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="coverage_included">
+                                                                                            <div class="coverage_text_container">
+                                                                                                <img src="../../../../../Images/Agents/quote/drop.png" class="coverage_included_image" />
+                                                                                                <p class="coverage_text text-uppercase">
+                                                                                                    Water Damage
+                                                                                                    <!--<a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Tooltip here">
+                                                            <img src="images/help_icon.png" />
+                                                        </a>-->
+                                                                                                </p>
+                                                                                                <p class="sub_description"> 40% of all insurance claims are due to water damage, whether it is a pipe break, toilet overflow, or water heaters. We cover all of them. </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="coverage_section_three monthly_premium_float">
+                                                                                        <div class="coverage_included coverage_included_white fire-adjust">
+                                                                                            <div class="coverage_text_container">
+                                                                                                <img src="../../../../../Images/Agents/quote/fire.png" class="coverage_included_image" />
+                                                                                                <p class="coverage_text text-uppercase">
+                                                                                                    Fire & Smoke Damage
+                                                                                                    <!--<a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Tooltip here">
+                                                            <img src="images/help_icon.png" />
+                                                        </a>-->
+                                                                                                </p>
+                                                                                                <p class="sub_description">There is a house fire every 10 seconds in the US, We will cover your investment during lighting strikes, smoking or electrical fires.</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="coverage_included">
+                                                                                            <div class="coverage_text_container">
+                                                                                                <img src="../../../../../Images/Agents/quote/crime.png" class="coverage_included_image" />
+                                                                                                <p class="coverage_text text-uppercase">
+                                                                                                    Crime & Vandalism
+                                                                                                    <!--<a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Tooltip here">
+                                                            <img src="images/help_icon.png" />
+                                                        </a>-->
+                                                                                                </p>
+                                                                                                <p class="sub_description">If your tenant or anyone else destroys or defaces your property without consent. We have you covered. </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="property_analysis_container">
+                                                                                <div class="property_analysis_subcontainer">
+                                                                                    <div class="property_analysis_section map-section">
+                                                                                        <div id="map-canvas" class="map-canvas-new" style="display:none;"></div>
+                                                                                        <div id="map-street-view" class="map-canvas-new"></div>
+                                                                                        <input type="hidden" value="{{ PropertyLatitude }}" id="PropertyLatitude" />
+                                                                                        <input type="hidden" value="{{ PropertyLongitude }}" id="PropertyLongitude" />
+                                                                                    </div>
+                                                                                    <div class="property_analysis_costs">
+                                                                                        <div class="property_analysis_tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/home.png" />
+                                                                                            <p class="analysis_price">Suggested Reconstruction Costs</p>
+                                                                                            <!--<p class="analysis_price_label">{{ 85 | currency}}</p>-->
+                                                                                            <p class="analysis_price_label">{{ property.coverage_value ? property.coverage_value : 0 | currency}}</p>
+                                                                                        </div>
+                                                                                        <div class="property_analysis_tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/home-search.png" />
+                                                                                            <p class="analysis_price">Property Appraisal</p>
+                                                                                            <p class="analysis_price_label">{{zillow.zestimate ? zillow.zestimate : 0 | currency}}</p>
+                                                                                        </div>
+                                                                                        <div class="property_analysis_tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/home-dollar.png" />
+                                                                                            <p class="analysis_price">Annual Rental Income</p>
+                                                                                            <p class="analysis_price_label">{{zillow.rentzestimate ? zillow.rentzestimate : 0 | currency}}</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!--Additional Coverage-->
+                                                    <div class="tab-content main-content col-xs-12 col-sm-12 Property_Coverage" style="display:none;">
+                                                        <div class="tab-pane active margl0" id="PropertyDetails">
+                                                            <div class="tab-container">
+                                                                <div class="col-xs-12 col-sm-4 col-md-3 side-panel-container Property_Details">
+                                                                    <form name="propertyForm" id="propertyForm" ng-submit="submitProperty()">
+                                                                        <div class="side-panel">
+                                                                            <div id="property_coverage">
+                                                                                <div class="row">
+                                                                                    <div class="col-xs-12 text-center side-panel-Head">
+                                                                                        <h1>Property Coverage</h1>
+                                                                                        <hr class="headding_line" width="25%" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-12 col-md-12 text-center">
+                                                                                        <label class="coverage_btn">{{property.coverage_value ? property.coverage_value : 0 |currency}} </label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12  ">
+                                                                                        <div class="row text-center">
+                                                                                            <div class="col-xs-4 col-sm-4 col-md-4 text-left" id="vertical_range_line">
+                                                                                                <p class="range_design">High</p>
+                                                                                            </div>
+                                                                                            <div class="col-xs-4 col-sm-4 col-md-4" id="vertical_range_line">
+                                                                                                <p class="range_design">Moderate</p>
+                                                                                            </div>
+                                                                                            <div class="col-xs-4 col-sm-4 col-md-4 text-right" id="vertical_range_line">
+                                                                                                <p class="range_design">Low</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <hr class="range_line" />
+                                                                                        <div class="range-slider">
+                                                                                            <input class="range-slider__range" type="range" name="range" ng-model="rangeslider_val" min="{{ rangeslider_min }}" max="{{ rangeslider_max }}" value="{{rangeslider_val}}" ng-mouseup="rangeslider()">
+                                                                                        </div>
+                                                                                        <div class="row text-center range_bottom">
+                                                                                            <div class="col-xs-6 col-sm-6 col-md-6 text-left">
+                                                                                                <p class="range_design_bottom">$ 65/Sq Ft</p>
+                                                                                            </div>
+                                                                                            <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                                                                                                <p class="range_design_bottom">$ 150/Sq Ft</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row  ">
+                                                                                    <div class="col-xs-12 text-center side-panel-Head">
+                                                                                        <h1>
+                                                                                            Optional Coverage
+                                                                                            <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Tooltip here">
+                                                                                                <img src="../../../../../Images/Agents/quote/help_icon.png" />
+                                                                                            </a>
+                                                                                        </h1>
+                                                                                        <hr class="headding_line" width="25%" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-12  col-md-12  ">
+                                                                                        <!--<div class="chk_btn">
+                                                <label class="btn">
+                                                    <input type="checkbox"><i class="fa fa-2x fa-circle-o fa-lg"></i><img src="images/check.png"><span>Rent Coverage</span>
+                                                </label>
+                                            </div>-->
+                                                                                        <p class="form-label">  Rent Coverage</p>
+                                                                                        <div class="input-group col-md-12">
+                                                                                            <input type="text" class="form-control investor-form" name="Rent_Coverage" ng-blur="property.rent_coverage == 0 ? property.additional_rent_coverage = 0 : property.additional_rent_coverage = 1 ; ratingInsureInvestors('rent');" ng-model="property.rent_coverage">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12  col-md-12 form-group">
+                                                                                        <!--<div class="chk_btn">
+                                                <label class="btn">
+                                                    <input type="checkbox" ng-model="property.additional_flood_coverage" ng-click="ratingInsureInvestors('flood');" ng-true-value="1" ng-false-value="0"><i class="fa fa-2x fa-circle-o fa-lg"></i><img src="images/check.png"><span>Flood Coverage</span>
+                                                </label>
+                                            </div>-->
+                                                                                        <p class="form-label"> Flood Coverage</p>
+                                                                                        <div class="input-group col-md-12">
+                                                                                            <input type="text" class="form-control investor-form" name="Flood_Coverage" ng-blur="property.flood_coverage == 0 ? property.additional_flood_coverage = 0 : property.additional_flood_coverage = 1 ; ratingInsureInvestors('flood');" ng-model="property.flood_coverage">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12  col-md-12  form-group">
+                                                                                        <div class="chk_btn">
+                                                                                            <label class="btn">
+                                                                                                <input type="checkbox" ng-click="ratingInsureInvestors('contents');" ng-model="property.additional_contents_coverage"><i class="fa fa-2x fa-circle-o fa-lg"></i><img src="../../../../../customer/assets/images/check.png"> <span>  Contents Coverage</span>
+                                                                                            </label>
+                                                                                            <div class="input-group col-md-12">
+                                                                                                <input type="text" class="form-control investor-form" name="Flood_Coverage" ng-blur="property.contents_coverage == 0 ? property.additional_contents_coverage = 0 : property.additional_contents_coverage = 1 ; ratingInsureInvestors('contents');" ng-model="property.contents_coverage">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12  col-md-12  form-group">
+                                                                                        <div class="chk_btn">
+                                                                                            <label class="btn">
+                                                                                                <input type="checkbox" ng-model="property.additional_liability_coverage" ng-click="ratingInsureInvestors('liability');"><i class="fa fa-2x fa-circle-o fa-lg"></i><img src="../../../../../customer/assets/images/check.png"> <span>Liability Coverage</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row add_property_btn">
+                                                                                    <div class="col-sm-12 col-md-12 col-xs-12 text-right">
+                                                                                        <!--<input type="submit" class="btn btn-lg btn-primary btn-property mrgt0 add_pro" role="button" value="Add Property" />-->
+                                                                                        <input type="submit" class="btn btn-lg btn-primary btn-property mrgt0 add_pro" role="button" value="Next" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--<div class="row another_property_btn" ng-show="IsPropertyAdded">
+                                        <div class="col-sm-12 col-md-12 col-xs-12 text-right">
+                                            <input type="button" ng-click="Add_Another_Property()" class="btn btn-lg btn-primary btn-property mrgt0" role="button" value="Add Another Property" />
+                                        </div>
+                                    </div>-->
+                                                                                <!--<div class="row another_property_btn" ng-show="IsPropertyAdded">
+                                        <div class="col-sm-12 col-md-12 col-xs-12 text-right">
+                                            <input type="button" ng-click="Add_Another_Property()" class="btn btn-lg btn-primary btn-property mrgt0" role="button" value="Add Another Property" />
+                                        </div>
+                                    </div>-->
+                                                                                <!--<div class="row another_property_btn" ng-show="IsPropertyAdded">
+                                        <div class="col-sm-12 col-md-12 col-xs-12 text-right">
+                                            <input type="button" ng-click="Add_Another_Property()" class="btn btn-lg btn-primary btn-property" role="button" value="Add Another Property" />
+                                        </div>
+                                    </div>
+                                    <div class="row another_property_btn">
+                                        <div class="col-sm-12 col-md-12 col-xs-12 text-right">
+                                            <a data-ui-sref="root.portfolioportal" class="btn btn-lg btn-primary btn-property" role="button" value="View Portfolio Summary">View Portfolio Summary </a>
+                                        </div>
+                                    </div>-->
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-8 col-md-9 right-panel Property_Details sm-right">
+                                                                    <div class="main-panel">
+                                                                        <div class="property-panel">
+                                                                            <div class="col-xs-12 col-sm-12 col-md-6 premium-tab">
+                                                                                <div class="pr0">
+                                                                                    <div class="row text-center">
+                                                                                        <p class="price-label">Yearly Premium Breakdown</p>
+                                                                                        <hr class="bottom-line" width="150px">
+                                                                                    </div>
+                                                                                    <div class="row text-center">
+                                                                                        <div class="col-xs-12 col-sm-4 col-md-4 premium-sub-tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/property.png" />
+                                                                                            <h3>Property</h3>
+                                                                                            <p>{{property.propertyPremium ? property.propertyPremium : 0  | currency}}</p>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12 col-sm-4 col-md-4 premium-sub-tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/padnote.png" />
+                                                                                            <h3>liability</h3>
+                                                                                            <p>{{property.dblLiabilityPremium ? property.dblLiabilityPremium : 0 | currency}}</p>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12 col-sm-4 col-md-4 premium-sub-tab">
+                                                                                            <img src="../../../../../Images/Agents/quote/flooding-house.png" />
+                                                                                            <h3>flood</h3>
+                                                                                            <p>{{property.dblFloodPremium ?  property.dblFloodPremium : 0 | currency}}</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-12 col-sm-6 col-md-3 lowPrice-tab">
+                                                                                <div class="pl0 pr0">
+                                                                                    <div class="row text-center">
+                                                                                        <div class="progress-radial progress-0 setsize {{ progres_class}}">
+                                                                                            <div class="overlay setsize">
+                                                                                                <p>{{risk_tracker ? risk_tracker : 'No Risk'}}</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-12 col-sm-6 col-md-3 monthly-tab">
+                                                                                <div class="row text-center monthly-tab-title">
+                                                                                    <p>Monthly Premium</p>
+                                                                                    <hr class="bottom-line" width="150px">
+                                                                                </div>
+                                                                                <div class="row text-center">
+                                                                                    <p class="price-tab">{{property.FinalPremium ? property.FinalPremium/12 : 0| currency}}</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="right_two">
+                                                                            <!--<div class="portlet light portlet-fit ">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <i class="icon-microphone font-dark hide"></i>
+                                            <span class="caption-subject bold font-dark uppercase"> ADDITIONAL COVERAGES</span>
+                                            <span class="caption-helper">These optional coverages are also available.</span>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mt-widget-3">
+                                                    <div class="mt-head bg-blue-hoki">
+                                                        <div class="mt-head-icon">
+                                                            <i class=" icon-social-twitter"></i>
+                                                        </div>
+                                                        <span class="mt-head-date"> LOSS OF INCOME </span>
+                                                        <div class="mt-head-desc"> In the event that a rental property becomes uninhabitable due to a covered loss we cover “rental reimbursement,” you would have had if you were collecting rent. </div>
+                                                        <div class="mt-head-button">
+                                                            <button type="button" class="btn btn-circle btn-outline white btn-sm">Add</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-body-actions-icons">
+                                                        <div class="btn-group btn-group btn-group-justified">
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-align-justify"></i>
+                                                                </span>RECORD
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-camera"></i>
+                                                                </span>PHOTO
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                                </span>DATE
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-record"></i>
+                                                                </span>RANC
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mt-widget-3">
+                                                    <div class="mt-head bg-red">
+                                                        <div class="mt-head-icon">
+                                                            <i class="icon-user"></i>
+                                                        </div>
+                                                        <span class="mt-head-date"> PRIVATE FLOOD INSURANCE </span>
+                                                        <div class="mt-head-desc"> Our flood program is a private market alternative to the NFIP with very distinct benefits. It provides replacement cost coverage for qualified risks.</div>
+                                                        <div class="mt-head-button">
+                                                            <button type="button" class="btn btn-circle btn-outline white btn-sm">Add</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-body-actions-icons">
+                                                        <div class="btn-group btn-group btn-group-justified">
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-align-justify"></i>
+                                                                </span>RECORD
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-camera"></i>
+                                                                </span>PHOTO
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                                </span>DATE
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-record"></i>
+                                                                </span>RANC
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mt-widget-3">
+                                                    <div class="mt-head bg-green">
+                                                        <div class="mt-head-icon">
+                                                            <i class=" icon-graduation"></i>
+                                                        </div>
+                                                        <span class="mt-head-date"> LIABILITY INSURANCE </span>
+                                                        <div class="mt-head-desc"> Whether a tenant, visitor or even a trespasser is injured on your rental property, we cover the costs associated with bodily injury claims such as medical payments, funeral costs, legal fees and judgment or settlement costs. </div>
+                                                        <div class="mt-head-button">
+                                                            <button type="button" class="btn btn-circle btn-outline white btn-sm">Add</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-body-actions-icons">
+                                                        <div class="btn-group btn-group btn-group-justified">
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-align-justify"></i>
+                                                                </span>RECORD
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-camera"></i>
+                                                                </span>PHOTO
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-calendar"></i>
+                                                                </span>DATE
+                                                            </a>
+                                                            <a href="javascript:;" class="btn ">
+                                                                <span class="mt-icon">
+                                                                    <i class="glyphicon glyphicon-record"></i>
+                                                                </span>RANC
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                                                            <div class="coverage_panel">
+                                                                                <div class="coverage_included_section">
+                                                                                    <div class="coverage_section_head">
+                                                                                        <p class="coverage_section_head_title text-uppercase">Additional Coverages</p>
+                                                                                        <p class="coverage_section_head_label">These optional coverages are also available.</p>
+                                                                                    </div>
+
+                                                                                    <div class="row text-center">
+                                                                                        <div class="col-md-4 text-center">
+                                                                                            <img src="../../../../../Images/Agents/quote/loss_home.png" class="additional_included_image" />
+                                                                                            <p class="additional_text text-uppercase"> <!--<img src="{{property.additional_rent_coverage ? 'images/check.png' : '' }}" />--> Loss of Income</p>
+                                                                                            <p class="sub_description_additional">In the event that a rental property becomes uninhabitable due to a covered loss we cover “rental reimbursement,” you would have had if you were collecting rent.</p>
+                                                                                            <p class="additional_text_amount">
+                                                                                                {{property.rent_coverage ? property.rent_coverage : 0 | currency}}
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <div class="col-md-4 text-center">
+                                                                                            <img src="../../../../../Images/Agents/quote/flood_home.png" class="additional_included_image" />
+                                                                                            <p class="additional_price text-uppercase"><!--<img src="{{property.additional_flood_coverage ? 'images/check.png' : '' }}" />--> Private Flood Insurance</p>
+                                                                                            <p class="sub_description_additional">Our flood program is a private market alternative to the NFIP with very distinct benefits. It provides replacement cost coverage for qualified risks.</p>
+                                                                                            <p class="additional_text_amount">
+                                                                                                {{property.flood_coverage ?  property.flood_coverage : 0 | currency}}
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <div class="col-md-4 text-center">
+                                                                                            <img src="../../../../../Images/Agents/quote/note.png" class="additional_included_image" />
+                                                                                            <p class="additional_text text-uppercase"><!--<img src="{{property.additional_liability_coverage ? 'images/check.png' : '' }}" />-->  Liability insurance</p>
+                                                                                            <p class="sub_description_additional">Whether a tenant, visitor or even a trespasser is injured on your rental property, we cover the costs associated with bodily injury claims such as medical payments, funeral costs, legal fees and judgment or settlement costs.</p>
+                                                                                            <p class="additional_text_amount">
+                                                                                                <!--{{property.dblLiabilityPremium ? property.dblLiabilityPremium : 0 | currency}}-->
+                                                                                                $1,000,000 <span>Per Occurrence</span>
+                                                                                            </p>
+                                                                                            <p class="additional_text_amount aggr_col">
+                                                                                                $2,000,000 <span>Aggregate</span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="property_analysis_container">
+                                                                                <div class="property_analysis_subcontainer">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-4 text-center">
+                                                                                            <div id="map-canvas2" class="map-canvas2-new" style="display:none"></div>
+                                                                                            <div id="map-street-view" class="map-canvas-new"></div>
+                                                                                        </div>
+                                                                                        <div class="col-md-8 text-center">
+                                                                                            <div class="row">
+                                                                                                <p class="additional_property_head">Property Details</p>
+                                                                                                <hr class="headding_line" width="25%" />
+                                                                                            </div>
+                                                                                            <div class="row padt20">
+                                                                                                <div class="col-md-5 text-center">
+                                                                                                    <table class="table">
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <th scope="row" class="table_head">Sq Ft</th>
+                                                                                                                <td class="table_data">{{property.footage}}</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row" class="table_head">Year Built</th>
+                                                                                                                <td class="table_data">{{property.year_built}}</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row" class="table_head">Property Type</th>
+                                                                                                                <td class="table_data">{{property.property_Type.name}}</td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                                <div class="col-md-6 text-center">
+                                                                                                    <table class="table">
+                                                                                                        <tbody>
+                                                                                                            <tr>
+                                                                                                                <th scope="row" class="table_head">Property Class</th>
+                                                                                                                <td class="table_data">{{property_class}}</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row" class="table_head">Average Annual Rents</th>
+                                                                                                                <td class="table_data">{{zillow.rentzestimate ? zillow.rentzestimate : 0 | currency}}</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row" class="table_head">Property Appraisal</th>
+                                                                                                                <td class="table_data">{{zillow.zestimate ? zillow.zestimate : 0 | currency}}</td>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
